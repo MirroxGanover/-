@@ -190,35 +190,6 @@ void uzdikTomenKorsetu() {
     }
 }
 
-/*void studSuryptau() {
-    int tandau = sanOku("1 - өсу, 2 - кему: ", 1, 2);
-    int n = studentter.size();
-
-    // Kopirshik suryptau (Bubble Sort)
-    for (int i = 0; i < n - 1; i++) {
-        for (int j = 0; j < n - i - 1; j++) {
-            double ortasha1 = ortashaBaga(j);
-            double ortasha2 = ortashaBaga(j + 1);
-            bool auystyru = false;
-
-            if (tandau == 1 && ortasha1 > ortasha2) {
-                auystyru = true;
-            }
-            if (tandau == 2 && ortasha1 < ortasha2) {
-                auystyru = true;
-            }
-
-            if (auystyru == true) {
-                Student uakytsha = studentter[j];
-                studentter[j] = studentter[j + 1];
-                studentter[j + 1] = uakytsha;
-            }
-        }
-    }
-
-    studKorsetu();
-}*/
-
 void studOzgertu() {
     int id = sanOku("Өзгертілетін ID: ", 1, MAX_ID);
     int index = studTabu(id);
@@ -393,9 +364,6 @@ int main() {
      case 4 :
     studIzdeu();
     break; 
-    /* case 5 :
-    studSuryptau();
-    break; */
      case 5 :
     studOzgertu();
     break; 
@@ -409,29 +377,9 @@ int main() {
     failgaSaktau();
     break; 
    }
-        /* if (tandau == 1) {
-            studKosu();
-        } else if (tandau == 2) {
-            studKorsetu();
-        } else if (tandau == 3) {
-            uzdikTomenKorsetu();
-        } else if (tandau == 4) {
-            studIzdeu();
-        } else if (tandau == 5) {
-            studSuryptau();
-        } else if (tandau == 6) {
-            studOzgertu();
-        } else if (tandau == 7) {
-            studOshiru();
-        } else if (tandau == 8) {
-            esepKorsetu();
-        } else if (tandau == 9) {
-            failgaSaktau();
-        } else {
-            failgaSaktau();
-            break;
-        } */
+        
     }
 
     return 0;
+
 }
