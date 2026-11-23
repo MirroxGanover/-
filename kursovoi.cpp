@@ -376,10 +376,16 @@ int main() {
      case 8 :
     failgaSaktau();
     break; 
+       case 9:
+    failgaSaktau();
+    return 0;
+       
    }
+        
         
     }
 
     return 0;
 
 }
+
